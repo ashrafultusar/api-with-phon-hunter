@@ -33,9 +33,27 @@
     </header>
 
 <main>
-    <section>
-        <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
 
+    <section class="bg-gray-100 p-4 m-4">
+        <input id="search-fila" type="text" placeholder="Search" class="input input-bordered w-full max-w-xs" />
+        <button onclick="handelSearch()" class="btn btn-accent">search</button>
+
+    </section>
+
+
+    <!-- search result -->
+    <section>
+<div id="loading-spiner" class="text-center my-40 hidden">
+    <span class="loading loading-spinner loading-lg "></span>
+
+</div>
+
+        <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        </div>
+
+<!-- show more section -->
+        <div id="show-all-container" class="hidden text-center my-4">
+            <button onclick="handelShowAll()" class="btn btn-accent">Show More</button>
         </div>
     </section>
 </main>
