@@ -29,20 +29,21 @@
 
 <body class="font-poppin ">
     <header class="container mx-auto pt-6">
-        <h1 class="font-bold text-5xl">Hunting Phone</h1>
+        <h1 class="font-bold text-5xl ">Hunting Phone</h1>
     </header>
 
 <main>
 
-    <section class="bg-gray-100 p-4 m-4">
-        <input id="search-fila" type="text" placeholder="Search" class="input input-bordered w-full max-w-xs" />
+    <section class="bg-gray-100 p-4 m-4 container mx-auto">
+        <div class="text-center sm:flex-col">
+            <input id="search-fila" type="text" placeholder="Search" class="input input-bordered w-full max-w-xs" />
         <button onclick="handelSearch()" class="btn btn-accent">search</button>
 
+        </div>
     </section>
 
-
     <!-- search result -->
-    <section>
+    <section class="container mx-auto mt-5">
 <div id="loading-spiner" class="text-center my-40 hidden">
     <span class="loading loading-spinner loading-lg "></span>
 
